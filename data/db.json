@@ -1,0 +1,9 @@
+{
+  "$schema": "./node_modules/json-server/schema.json",
+    "userData":[
+        {
+            "name":"demo",
+            "email":"demo@demo.com"
+        }
+    ]
+}
