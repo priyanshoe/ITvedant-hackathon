@@ -1,7 +1,9 @@
 import React from 'react'
-import {Outlet } from "react-router-dom"
+import {Outlet, useLocation } from "react-router-dom"
 import TopNavBar from '../components/TopNavBar'
+import { AnimatePresence } from 'framer-motion'
 function MainLayout() {
+  const location = useLocation()
   return (
     <>
     <TopNavBar
@@ -24,7 +26,6 @@ function MainLayout() {
         theme="light"
         initialLoadAnimation={false}
         />
-      
       <main>
       <Outlet/>
     </main>
