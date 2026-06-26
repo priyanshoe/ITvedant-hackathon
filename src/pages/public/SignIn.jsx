@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+import Transition from '../../components/animations/Transition'
 
 function SignIn() {
   const navigate = useNavigate()
@@ -17,7 +18,7 @@ function SignIn() {
     navigate("/admin/dashboard")
   }
   return (
-    <>
+    <Transition>
   <div className="relative flex min-h-screen w-full overflow-hidden">
     {/* Animated Background Elements */}
     <div className="blob-bg -top-25 -left-25" />
@@ -296,7 +297,7 @@ function SignIn() {
       </div>
     </div>
   </div>
-</>
+</Transition>
 
   )
 }

@@ -1,8 +1,10 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import Transition from '../../components/animations/Transition'
 
 function SignUp() {
   return (
+    <Transition>
     <div className='relative flex items-center justify-center gap-0'>
   {/* Hero / Side Section (Hidden on Mobile) */}
   <div className="absuloute top-0 left-0 bottom-0 hidden lg:flex lg:w-1/3 xl:w-2/5 px-xl gap-10 flex-col justify-between overflow-hidden">
@@ -333,6 +335,7 @@ function SignUp() {
     </div>
   </main>
 </div>
+</Transition>
 
   )
 }
